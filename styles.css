@@ -1,62 +1,291 @@
-.container{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+
+
+html, body {
+  margin: 0px;
+
+}
+
+/* unvisited link */
+a:link {
+  color: black;
+}
+
+/* visited link */
+a:visited {
+  color: black;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: black;
+}
+body {
+  font-family: Roboto;
+}
+
+/* H1 header */
+
+.m-0{
+  color: rgb(0, 0, 0);
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.842), rgba(255, 255, 255, 0.839));
+  border-radius: 40px;
+  
+}
+
+
+
+[id="h1_1"] {
+  font-family: Libre Baskerville;
+  font-weight: bold;
+  color: rgb(0, 153, 33);
+}
+
+[id="h1_2"] {
+  font-family: Roboto;
+  font-weight: 100;
+}
+
+h1.header {
+  font-size: 100px;
+  text-align: left;
+  padding-top: 80px;
+  padding-left: 110px;
+}
+
+div.plaid {
+  background-image: url(assets/images/plaid.jpg);
+  background-repeat: no-repeat;
+  background-size: 30%;
+  background-position-x: 85%;
+  background-position-y: 50%;
+
+}
+
+div.header {
+  background-image: url(assets/images/main-page-header.png);
+  background-repeat: no-repeat;
+  background-position-x: 85%;
+  background-position-y: 50%;
+  min-height: 600px;   
+}
+
+
+/* H1 header */
+
+/* NAV MENU */
+.nav {
+  list-style-type: none;
+  margin: 0px;
+  padding: 20px;
+  background-color: rgb(255, 156, 74);
+  
+}
+
+ul.nav > li {
+  display: inline;
+  text-transform: uppercase;
+}
+
+ul.nav > li > a {
+  display: inline;
+  color: white;
+  padding: 20px;
+  text-decoration: none;
+}
+
+ul.nav > li > a:hover {
+  color: rgb(0, 153, 33);
+  background-color: white;
+}
+
+/* NAV MENU */
+
+/* Recipes Gallery in Main Page */
+
+div.container {
+  display:inline-block;
+  margin-left: 88px;
+  
+}
+
+p.recipe-name {
+  font-family: Roboto;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+p.recipe-name > a {
+  text-decoration: none;
+  color: black;
+}
+
+p.recipe-name > a:hover {
+  padding: 5px;
+  background-color: rgb(0, 0, 0);
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+
+p.recipe-name {
+  text-align:center;
+}
+
+h1, h2, h3, h4 {
+  font-family: LibreBaskerville;
+
 }
 
 h1 {
-    text-align: center;
-    font-size: 25px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 70px;
+  margin: 2%;
 }
 
-a{
-    margin: 10px;
-    color: black;
-    font-size: 20px;
-}
-ul{
-    margin-top: 5px;
-
+h2 {
+  font-size: 38px;
 }
 
-h3{
-    color: brown;
+h3 {
+  font-size: 26px;
+  padding: 15px;
+  margin: 25px;
 }
 
-.grid {
-    display: flex;
-    outline: 1px solid blue;
-    margin-left: -24px;
-  }
+h4 {
+  font-size: 21px;
+
+  padding: 15px;
+  margin: 25px;
+}
+
+.description, .ingredients, .steps {
+  font-size: 18px;
+}
 
 
+/*****Recipes Page*****/
+
+div.recipe-header {
+  text-align: left;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
 
 
+}
+
+div.body-recipe {
+  max-width: 55%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p.figcaption {
+  color: rgb(110, 110, 110);
+  font-style: italic;
+  font-size: 80%;
+
+}
+
+img.recipe {
+  width: 100%;
+}
 
 
-body{
-    font-family:Arial, Helvetica, sans-serif
-  }
+img.step-image {
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 75%;
+}
+
+
+img.footer-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
   
-  .para,
-  .small-para {
-    color: hsl(0, 0%, 0%);
-    font-weight: 800;
-  }
-  
-  .para {
-    font-size: 22px;
-  }
-  
-  .button {
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    font-size: 20px;
-  }
-  
-  div.text {
-    color: rgb(0, 0, 0);
-    font-weight: 100;
-    font-size: 22px;
-  }
+}
+
+.footer {
+  position: relative;
+  background: rgb(235, 235, 235);
+  margin-top: 8%;
+  padding: 30px;
+}
+
+.footer:before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(-45deg, #ff814f 0%, #92ff92 100% );
+  transform: translate3d(0px, -20px, 0) scale(1);
+  filter: blur(20px);
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+
+.footer::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: inherit;
+}
+
+
+
+/* FONTS */
+
+@font-face {
+  font-family: 'Libre Baskerville';
+  src: url('assets/fonts/LibreBaskerville-Bold.woff') format('woff2'),
+      url('assets/fonts/LibreBaskerville-Bold.woff2') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Libre Baskerville';
+  src: url('assets/fonts/LibreBaskerville-Regular.woff') format('woff2'),
+      url('assets/fonts/LibreBaskerville-Regular.woff2') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('assets/fonts/Roboto-Regular.woff') format('woff2'),
+      url('assets/fonts/Roboto-Regular.woff2') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('assets/fonts/Roboto-Thin.woff') format('woff2'),
+      url('assets/fonts/Roboto-Thin.woff2') format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* FONTS */
