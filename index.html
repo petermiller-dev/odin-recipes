@@ -6,25 +6,237 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Odin Recipes</title>
     <link rel="stylesheet" href="styles.css">
-</head>
-<header class="hero">
-    <div class="hero-container">
-        <div class="hero-text">
-            <h1>Odin Recipes</h1>
-            <h4>no fluff, just recipes</h4>
-        </div>
-    </div>
-</header>
 
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+  crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+<link rel="stylesheet" href="stylesheet/stylesheet.css">
+<link rel="shortcut icon" href="./assets/images/tumblr_ba01f3ec7ee6dd697562bbe44d52518d_5565ec89_540.png" type="image/x-icon">
+</head>
 
 <body>
-    
-    <h1 class="grid"></h1>
-        <ul class="container">
-            <li><a href="./recipes/lasagna.html" >Lasagna</a><img height="400" href="./recipes/lasagna.html" src="/odin-recipes/images/lazagna.jpeg"></a></li>
-            <li><a href="./recipes/texas-chili.html">Texas Chili</a><img height="400" href="./recipes/chili.html" src="/odin-recipes/images/chili.jpg"></a></li>
-            <li><a href="./recipes/pizza-balls.html">Pizza Balls</a><img height="400" href="./recipes/pizza.html" src="/odin-recipes/images/pizza.jpg"></a></li>
-        </ul>
-    
+
+<nav class="navbar navbar-expand-lg bg-light px-lg-5 px-4 py-3 position-relative">
+  <div class="container d-sm-flex flex-row justify-content-between px-sm-0 px-lg-5">
+      <a class="navbar-brand d-lg-none order-sm-1" href="javascript:void(0)">Change this</a>
+      <button class="navbar-toggler order-sm-3" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse order-sm-last" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="/odin-recipes/">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" target="_blank" href="https://github.com/petermiller-dev">Contact</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" target="_blank"
+                      href="https://www.theodinproject.com/lessons/foundations-recipes">About</a>
+              </li>
+          </ul>
+      </div>
+      <form class="d-none d-sm-flex order-sm-0 order-lg-last" role="search">
+          <input class="form-control me-2 order-sm-1 order-lg-0" type="search" aria-label="Search">
+          <i class="bi bi-search order-sm-0 order-lg-1" type="submit"></i>
+      </form>
+  </div>
+</nav>
+
+
+<div class="container-fluid d-none d-lg-block p-5 my-4" id="titleDiv">
+  <h1 class="text-center m-0">Nothing Fancy</h1>
+</div>
+
+
+<div id="carousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+      <a href="javascript:void(0)">
+          <div class="carousel-item active position-relative">
+              <div class="headerShadowDiv position-absolute"></div>
+              <img src="/odin-recipes/images/chili.jpg" href="./recipes/texas-chili.html" class="d-block w-100" alt="...">
+              <div class="carousel-caption">
+                  <p class="m-0">This Texas chili is rich and hearty with just the right amount of heat. The beef is wonderfully tender and perfectly absorbs the smoky, savory seasoning of the pepper paste and spices.</p>
+                  <h2 class="m-0"><a href="./recipes/texas-chili.html">Texas Chili</a></h2>
+              </div>
+          </div>
+      </a>
+      <a href="javascript:void(0)">
+          <div class="carousel-item position-relative">
+              <div class="headerShadowDiv position-absolute"></div>
+              <img src="/odin-recipes/images/lazagna.jpg" href="./recipes/lasagna.html" class="d-block w-100" alt="...">
+              <div class="carousel-caption">
+                  <p class="m-0">Making lasagna can be time-consuming, but the results are well worth the wait. You'll find a detailed ingredient list and step-by-step instructions in the recipe below</p>
+                  <h2 class="m-0"><a href="./recipes/lasagna.html">Hand Made Lasagna</a></h2>
+              </div>
+          </div>
+      </a>
+      <a href="javascript:void(0)">
+          <div class="carousel-item position-relative">
+              <div class="headerShadowDiv position-absolute"></div>
+              <img src="/odin-recipes/images/pizza.jpg" href="./recipes/pizza-balls.html" class="d-block w-100" alt="...">
+              <div class="carousel-caption">
+                  <p class="m-0">They're like whole pizzas that can be popped into your mouth in a single bite!</p>
+                  <h2 class="m-0"><a href="./recipes/pizza-balls.html">Pizza Balls</a></h2>
+              </div>
+          </div>
+      </a>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<div class="container-fluid px-lg-5 px-4 pt-5" id="recipesDiv">
+  <div class="row px-sm-0 px-lg-5">
+      <h2 class="col-12 px-4">Popular Recipes</h2>
+      <div class="col-sm-12 col-md-6 col-lg-4 px-4 pb-0 pt-3">
+          <div class="container p-0 d-flex flex-column">
+              <div class="recipeImgContainer">
+                  <a href="./recipes/lasagna.html"><img class="recipeImg" height="200" src="/odin-recipes/images/lazagna.jpg" alt=""></a>
+              </div>
+              <p class="mx-3 pt-4">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star"></i>
+              </p>
+              <h4 class="mx-3"><a href="./recipes/lasagna.html">Lasagna</a></h4>
+              <div class="authorDiv d-flex gap-2 align-items-center mx-3">
+                  <img class="authorImg" src="http://placekitten.com/22/22" alt="">
+                  <p>By John Doe</p>
+              </div>
+              <div class="recipeDateDiv d-flex flex-row gap-3 align-items-center justify-content-end mx-3 mb-2">
+                  <div class="d-flex flex-row gap-2 align-items-center">
+                      <i class="bi bi-calendar2"></i>
+                      <p class="m-0">Yesterday</p>
+                  </div>
+                  <div class="d-flex flex-row gap-2 align-items-center">
+                      <i class="bi bi-chat-left-dots"></i>
+                      <p class="m-0">86</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-4 px-4 pb-0 pt-3">
+          <div class="container p-0 d-flex flex-column">
+              <div class="recipeImgContainer">
+                  <a href="./recipes/pizza-balls.html"><img class="recipeImg" src="/odin-recipes/images/pizza.jpg" height="200" alt=""></a>
+              </div>
+              <p class="mx-3 pt-4">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                  <i class="bi bi-star"></i>
+              </p>
+              <h4 class="mx-3"><a href="./recipes/pizza-balls.html">Pizza Balls</a></h4>
+              <div class="authorDiv d-flex gap-2 align-items-center mx-3">
+                  <img class="authorImg" src="http://placekitten.com/22/22" alt="">
+                  <p>By John Doe</p>
+              </div>
+              <div class="recipeDateDiv d-flex flex-row gap-3 align-items-center justify-content-end mx-3 mb-2">
+                  <div class="d-flex flex-row gap-2 align-items-center">
+                      <i class="bi bi-calendar2"></i>
+                      <p class="m-0">November 6th</p>
+                  </div>
+                  <div class="d-flex flex-row gap-2 align-items-center">
+                      <i class="bi bi-chat-left-dots"></i>
+                      <p class="m-0">91</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-sm-12 col-md-6 col-lg-4 px-4 pb-0 pt-3">
+          <div class="container p-0 d-flex flex-column">
+              <div class="recipeImgContainer">
+                  <a href="./recipes/texas-chili.html"><img class="recipeImg" src="/odin-recipes/images/chili.jpg" height="200" alt=""></a>
+              </div>
+              <p class="mx-3 pt-4">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+              </p>
+              <h4 class="mx-3"><a href="./recipes/texas-chili.html">Texas Chili</a></h4>
+              <div class="authorDiv d-flex gap-2 align-items-center mx-3">
+                  <img class="authorImg" src="http://placekitten.com/22/22" alt="">
+                  <p>By John Doe</p>
+              </div>
+              <div class="recipeDateDiv d-flex flex-row gap-3 align-items-center justify-content-end mx-3 mb-2">
+                  <div class="d-flex flex-row gap-2 align-items-center">
+                      <i class="bi bi-calendar2"></i>
+                      <p class="m-0">November 2nd</p>
+                  </div>
+                  <div class="d-flex flex-row gap-2 align-items-center">
+                      <i class="bi bi-chat-left-dots"></i>
+                      <p class="m-0">105</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+  </div>
+</div>
+
+<div class="container-fluid p-lg-5 p-5" id="newsletterDiv">
+  <div class="row p-md-5">
+      <div class="col-12 text-center">
+          <h2>Deliciousness<br>to your Inbox</h2>
+          <p class="my-3">Subscribe to our newsletter and get our latest recipes and cooking tips delivered to
+              your inbox.</p>
+          <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Your email address"
+                  aria-label="Your email address" aria-describedby="button-addon2">
+              <button class="btn px-4" type="button" id="button-addon2">Join</button>
+          </div>
+          <p class="my-3 termsAndConditions">By joining our newsletter, you agree to our <a
+                  href="javascript:void(0)">Terms and Conditions</a></p>
+      </div>
+  </div>
+</div>
+
+
+
+<div class="container">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-md-3 pb-1 mb-2 px-4 border-top">
+      <div class="col-md-4 d-flex align-items-center">
+          <span class="mb-3 mb-md-0 text-muted">&copy; 2023 petermiller-dev</span>
+      </div>
+
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3"><a class="text-muted" href="javascript:void(0)">
+              <i class="bi bi-twitter"></i>
+          </a></li>
+          <li class="ms-3"><a class="text-muted" href="javascript:void(0)">
+              <i class="bi bi-instagram"></i></a></li>
+          <li class="ms-3"><a class="text-muted" target="_blank" href="https://github.com/petermiller-dev">
+              <i class="bi bi-github"></i>
+          </a></li>
+      </ul>
+  </footer>
+</div>
 </body>
+
 </html>
