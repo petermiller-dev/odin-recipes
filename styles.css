@@ -26,6 +26,11 @@ a:active {
 }
 body {
   font-family: Roboto;
+  margin: 25px;
+}
+
+.article{
+  margin: 90px;
 }
 
 /* H1 header */
@@ -37,6 +42,12 @@ body {
   
 }
 
+.list{
+  margin: 90px;
+  align-content: center;
+  color: #92ff92;
+  padding: 40px;
+}
 
 
 [id="h1_1"] {
